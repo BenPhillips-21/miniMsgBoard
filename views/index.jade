@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button(onclick="location.href='/new'") Go to /new
 
   each message in messages
     p= message.user
